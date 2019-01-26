@@ -10,7 +10,7 @@ class CouponsController < ApplicationController
 
   def create
 
-    redirect_to coupon_path
+    redirect_to coupons_path
   end
 
 end
