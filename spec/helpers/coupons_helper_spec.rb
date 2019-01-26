@@ -15,7 +15,7 @@ RSpec.describe CouponsHelper, type: :helper do
    describe CouponsHelper do
      describe "string concat" do
        it "concats two strings with spaces" do
-         expect(helper.concat_strings("this","that")).to eq("this that")
+         expect(helper.to_s("this","that")).to eq("use this at that")
        end
      end
    end
