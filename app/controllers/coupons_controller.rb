@@ -18,7 +18,7 @@ class CouponsController < ApplicationController
   end
 
   def show
-
+    
   end
 
 end
