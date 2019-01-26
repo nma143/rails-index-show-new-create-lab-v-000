@@ -12,12 +12,4 @@ require 'rails_helper'
 # end
 RSpec.describe CouponsHelper, type: :helper do
    #pending "add some examples to (or delete) #{__FILE__}"
-   describe CouponsHelper do
-     describe "create string" do
-       it "creates a string with coupon details" do
-         Coupon.create(coupon_code: "ASD123", store: "Chipotle")
-         expect(helper.to_s).to eq("use ASD123 at Chipotle")
-       end
-     end
-   end
 end
