@@ -16,7 +16,7 @@ RSpec.describe CouponsHelper, type: :helper do
      describe "create string" do
        it "creates a string with coupon details" do
          Coupon.create(coupon_code: "ASD123", store: "Chipotle")
-         expect(helper.to_s.to eq("use ASD123 at Chipotle"))
+         expect(helper.to_s).to eq("use ASD123 at Chipotle")
        end
      end
    end
