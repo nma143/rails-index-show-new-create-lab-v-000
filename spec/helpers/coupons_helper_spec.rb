@@ -13,8 +13,9 @@ require 'rails_helper'
 RSpec.describe CouponsHelper, type: :helper do
    #pending "add some examples to (or delete) #{__FILE__}"
    describe CouponsHelper do
-     describe "string concat" do
-       it "concats two strings with spaces" do
+     describe "create string" do
+       it "creates a string with coupon details" do
+         Coupon.create(coupon_code: "ASD123", store: "Chipotle")
          expect(helper.to_s("this","that")).to eq("use this at that")
        end
      end
